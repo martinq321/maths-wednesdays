@@ -1,32 +1,29 @@
-# Maths Wednesdays puzzles
+# Maths Wednesdays
 
-A static website ready for GitHub Pages. This first package contains the three linked Mastermind activities. Add other games as separate folders and link them from index.html.
+A static website: seven activities, no build step or account required.
 
-## Publish
+## Update your existing GitHub Pages site
 
-1. Create a public GitHub repository called `maths-wednesdays` (or choose your own name).
-2. Extract this ZIP. Upload its CONTENTS so `index.html` is at the repository root, not inside an extra wrapper folder. Include the `mastermind` folder.
-3. Commit the files to the `main` branch.
-4. Open Settings → Pages → Build and deployment → Source: Deploy from a branch.
-5. Select `main` and `/(root)`, then Save.
-6. Wait for the deployment to finish. Use the website link shown in Settings → Pages.
+1. Extract the ZIP on your computer.
+2. Open the maths-wednesdays repository on GitHub, on the main branch.
+3. Choose Add file → Upload files at the repository root.
+4. Drag in index.html, README.md, engineering and hanoi from the extracted folder. The existing mastermind folder is unchanged; the ZIP also contains it for a complete installation.
+5. Commit the upload. Wait for the Pages deployment in Actions to succeed.
+6. Open https://martinq321.github.io/maths-wednesdays/ and refresh.
 
-The typical address is https://YOUR-USERNAME.github.io/maths-wednesdays/ . This package does not create a repository or publish a website by itself.
+Upload the contents, not the ZIP or an enclosing folder. index.html must be at the repository root. Keep spelling and capitalisation exactly as supplied.
 
-Official instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+## Pages
 
-## Add activities
+- index.html — homepage
+- mastermind/Mastermind_Maths_Wednesdays.html — play / assistant
+- mastermind/Mastermind_Strategy_Tree.html — strategy tree
+- mastermind/Mastermind_Puzzles.html — unique-answer puzzles
+- hanoi/index.html — Tower of Hanoi
+- engineering/rigidity-2d.html — 2D Rigidity Lab
+- engineering/rigidity-3d.html — 3D Rigidity Lab
+- engineering/bridge-lab.html — Bridge Lab
 
-Create a folder for each game; keep its assets together. Add a homepage card linking to its entry HTML file. Add a Home link pointing back to `../index.html` in each activity. Use relative paths, which work under a repository URL and offline. Commit updates to main to publish them.
+Every activity links back to the homepage. Engineering activities also link to each other. All pages work as static HTML, including when opened locally with their folder structure intact.
 
-## Included behaviour
-
-- 1–6 colours and holes; colours-only pegs, no visible colour-name labels.
-- Puzzle uniqueness is checked against all codes, independently of how guesses are selected.
-- Clues and reset confirmations are inline; no app-triggered pop-ups.
-- Strategy suggestions for large states can be sampled, not globally optimal.
-- Puzzle generation uses a background worker; cancelling terminates it.
-
-## Validation
-
-Game and puzzle engine checks, simulated DOM/worker interactions and relative links checked. No rendered browser QA or live deployment was performed. Before sharing widely, check the deployed pages on phone and desktop.
+To add another activity, place its HTML in a suitable folder, give it a relative Home link, and add a card to index.html. Do not upload private notes, chat exports or administrative JSON files.
