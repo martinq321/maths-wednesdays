@@ -1,6 +1,6 @@
 # Maths Wednesdays
 
-A static website: seven activities, no build step or account required.
+A static website: nine activities, no build step or account required.
 
 ## Update your existing GitHub Pages site
 
@@ -27,3 +27,13 @@ Upload the contents, not the ZIP or an enclosing folder. index.html must be at t
 Every activity links back to the homepage. Engineering activities also link to each other. All pages work as static HTML, including when opened locally with their folder structure intact.
 
 To add another activity, place its HTML in a suitable folder, give it a relative Home link, and add a card to index.html. Do not upload private notes, chat exports or administrative JSON files.
+
+## Koyama–Lai puzzle addition
+
+Upload mastermind/Mastermind_Koyama_Lai_Puzzles.html and the updated index.html. The updated general puzzle page also links to it. This new page uses six colours/four holes, the original published decision table plus modification K. Independent exhaustive verification: 1296 secrets, 5626 total guesses, maximum 5. Only uniquely solvable clue histories are offered. See mastermind/Koyama_Lai_Verification.json.
+
+All classic-board game hints, tree branches and puzzles now share Koyama–Lai’s five-guess policy (opening aabc). The guarantee assumes every recommendation is followed from the opening. For arbitrary manual histories not in that policy, game hints fall back to minimax. Other board sizes keep their earlier strategies.
+
+## Live solver
+
+mastermind/Mastermind_Live_Solver.html: enter arbitrary classic-board guesses and feedback, select Knuth or Koyama–Lai, reveal/use suggestions, edit past turns, undo or reset. Updates homepage and all Mastermind navigation links. Koyama–Lai falls back to minimax for candidate sets outside its table.
