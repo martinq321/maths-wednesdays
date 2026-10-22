@@ -1,39 +1,32 @@
-# Maths Wednesdays
+# Complete student site — curated edition
 
-A static website: nine activities, no build step or account required.
+Upload the contents of this ZIP to martinq321/maths-wednesdays, with index.html at repository root. Keep all folders intact. This is a full site, not a patch. No installation or build is needed.
 
-## Update your existing GitHub Pages site
+Homepage: exactly 15 links, in four groups:
+1. Mastermind, 15 game, Dobble, Josephus, Hanoi, Bridge Lab.
+2. Times tables, Memory.
+3. Multiply to the target, Chase & escape, The divisor game, Secret messages.
+4. Pixel art, Build a robot, Enigma explorer.
 
-1. Extract the ZIP on your computer.
-2. Open the maths-wednesdays repository on GitHub, on the main branch.
-3. Choose Add file → Upload files at the repository root.
-4. Drag in index.html, README.md, engineering and hanoi from the extracted folder. The existing mastermind folder is unchanged; the ZIP also contains it for a complete installation.
-5. Commit the upload. Wait for the Pages deployment in Actions to succeed.
-6. Open https://martinq321.github.io/maths-wednesdays/ and refresh.
+All Mastermind helper pages, Dobble play modes, the 15-game grid version, rigidity labs and Josephus binary are linked from their main activity pages, not from the homepage.
 
-Upload the contents, not the ZIP or an enclosing folder. index.html must be at the repository root. Keep spelling and capitalisation exactly as supplied.
+Josephus now uses Ace-to-King cards in a circle only, with 1–13 cards, prediction, step, slow-play, undo and a results table.
 
-## Pages
+River crossing, planning, prototypes and other unselected activity HTML pages are absent. If you previously uploaded them, GitHub uploads will NOT remove them. To remove direct access too, delete ONLY these old paths if present:
+planner.html
+river-crossing/
+sprouts/
+workshop/
+sessions/nim.html
+sessions/paper.html
+sessions/sorting.html
+sessions/set.html
+sessions/turing.html
+sessions/codebot.html
+games/wordle.html
+games/bee.html
+games/cube.html
+games/grid.html
+games/neighbours.html
 
-- index.html — homepage
-- mastermind/Mastermind_Maths_Wednesdays.html — play / assistant
-- mastermind/Mastermind_Strategy_Tree.html — strategy tree
-- mastermind/Mastermind_Puzzles.html — unique-answer puzzles
-- hanoi/index.html — Tower of Hanoi
-- engineering/rigidity-2d.html — 2D Rigidity Lab
-- engineering/rigidity-3d.html — 3D Rigidity Lab
-- engineering/bridge-lab.html — Bridge Lab
-
-Every activity links back to the homepage. Engineering activities also link to each other. All pages work as static HTML, including when opened locally with their folder structure intact.
-
-To add another activity, place its HTML in a suitable folder, give it a relative Home link, and add a card to index.html. Do not upload private notes, chat exports or administrative JSON files.
-
-## Koyama–Lai puzzle addition
-
-Upload mastermind/Mastermind_Koyama_Lai_Puzzles.html and the updated index.html. The updated general puzzle page also links to it. This new page uses six colours/four holes, the original published decision table plus modification K. Independent exhaustive verification: 1296 secrets, 5626 total guesses, maximum 5. Only uniquely solvable clue histories are offered. See mastermind/Koyama_Lai_Verification.json.
-
-All classic-board game hints, tree branches and puzzles now share Koyama–Lai’s five-guess policy (opening aabc). The guarantee assumes every recommendation is followed from the opening. For arbitrary manual histories not in that policy, game hints fall back to minimax. Other board sizes keep their earlier strategies.
-
-## Live solver
-
-mastermind/Mastermind_Live_Solver.html: enter arbitrary classic-board guesses and feedback, select Knuth or Koyama–Lai, reveal/use suggestions, edit past turns, undo or reset. Updates homepage and all Mastermind navigation links. Koyama–Lai falls back to minimax for candidate sets outside its table.
+Do not delete repository configuration or the retained activity/helper folders. Nothing has been uploaded to GitHub by this update.
